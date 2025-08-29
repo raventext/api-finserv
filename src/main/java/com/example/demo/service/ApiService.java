@@ -31,7 +31,7 @@ public class ApiService {
             int sum = 0;
             List<String> alphaOriginalOrder = new ArrayList<>();
 
-            for (int i = 3; i < data.size(); i++) {
+            for (int i = 3; i < data.size(); i++) { // ✅ start after user/email/roll
                 String item = data.get(i);
                 if (item.matches("\\d+")) {
                     int num = Integer.parseInt(item);
@@ -54,10 +54,7 @@ public class ApiService {
             response.setAlphabets(alphabets);
             response.setSpecialCharacters(specialChars);
             response.setSum(String.valueOf(sum));
-
-            String concatString = buildAlternatingCaps(alphaOriginalOrder);
-            response.setConcatString(concatString);
-
+            response.setConcatString(buildAlternatingCaps(alphaOriginalOrder));
             response.setSuccess(true);
 
         } catch (Exception e) {
