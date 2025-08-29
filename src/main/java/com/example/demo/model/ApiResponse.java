@@ -14,20 +14,19 @@ public class ApiResponse {
     private String sum;
     private String concat_string;
 
-    // Getters & Setters
-    public boolean isIs_success() {
+    public boolean isSuccess() {
         return is_success;
     }
 
-    public void setIs_success(boolean is_success) {
-        this.is_success = is_success;
+    public void setSuccess(boolean success) {
+        is_success = success;
     }
 
-    public String getUser_id() {
+    public String getUserId() {
         return user_id;
     }
 
-    public void setUser_id(String user_id) {
+    public void setUserId(String user_id) {
         this.user_id = user_id;
     }
 
@@ -39,27 +38,27 @@ public class ApiResponse {
         this.email = email;
     }
 
-    public String getRoll_number() {
+    public String getRollNumber() {
         return roll_number;
     }
 
-    public void setRoll_number(String roll_number) {
+    public void setRollNumber(String roll_number) {
         this.roll_number = roll_number;
     }
 
-    public List<String> getOdd_numbers() {
+    public List<String> getOddNumbers() {
         return odd_numbers;
     }
 
-    public void setOdd_numbers(List<String> odd_numbers) {
+    public void setOddNumbers(List<String> odd_numbers) {
         this.odd_numbers = odd_numbers;
     }
 
-    public List<String> getEven_numbers() {
+    public List<String> getEvenNumbers() {
         return even_numbers;
     }
 
-    public void setEven_numbers(List<String> even_numbers) {
+    public void setEvenNumbers(List<String> even_numbers) {
         this.even_numbers = even_numbers;
     }
 
@@ -71,11 +70,11 @@ public class ApiResponse {
         this.alphabets = alphabets;
     }
 
-    public List<String> getSpecial_characters() {
+    public List<String> getSpecialCharacters() {
         return special_characters;
     }
 
-    public void setSpecial_characters(List<String> special_characters) {
+    public void setSpecialCharacters(List<String> special_characters) {
         this.special_characters = special_characters;
     }
 
@@ -87,11 +86,11 @@ public class ApiResponse {
         this.sum = sum;
     }
 
-    public String getConcat_string() {
+    public String getConcatString() {
         return concat_string;
     }
 
-    public void setConcat_string(String concat_string) {
+    public void setConcatString(String concat_string) {
         this.concat_string = concat_string;
     }
 }
