@@ -58,5 +58,53 @@ cd api-finserv
 By default, service runs on:
 
 http://localhost:8080
+---
+## Deployment
+The project has been deployed on railway publish.
+link->https://web-production-f42d1.up.railway.app/bfhl
 
+and on local host it is deployed on port.
+link->http://localhost:8080/bfhl  
 
+sample data-
+{
+  "data": [
+    "john_doe_17091999",
+    "john@xyz.com",
+    "ABCD123",
+    "a",
+    "1",
+    "334",
+    "4",
+    "R",
+    "$",
+    "b",
+    "c"
+  ]
+}
+
+sample result-
+{
+    "email": "john@xyz.com",
+    "alphabets": [
+        "A",
+        "R",
+        "B",
+        "C"
+    ],
+    "sum": "339",
+    "userId": "john_doe_17091999",
+    "rollNumber": "ABCD123",
+    "oddNumbers": [
+        "1"
+    ],
+    "evenNumbers": [
+        "334",
+        "4"
+    ],
+    "specialCharacters": [
+        "$"
+    ],
+    "concatString": "ArBc",
+    "success": true
+}
